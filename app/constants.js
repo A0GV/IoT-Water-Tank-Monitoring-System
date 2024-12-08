@@ -12,7 +12,7 @@ const dbPort = process.env.DB_PORT;
 const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASS;
 const dbName = process.env.DB_NAME;
-const serverPort = process.env.SERVER_PORT||3000; ;
+const serverPort = process.env.SERVER_PORT||3000;
 
 
 

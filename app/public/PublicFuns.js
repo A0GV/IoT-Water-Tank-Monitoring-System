@@ -35,7 +35,7 @@ function crearGrafica() {
     let myChart;
 
     const actualizarGrafica = () => {
-        fetch('http://localhost:3000/iot/api/getAllDist')
+        fetch('https://tinaco.vercel.app/iot/api/getAllDist')
             .then(response => response.json())
             .then(response => {
                 const data = response.data;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function actualizarTemperatura() {
-    fetch('http://localhost:3000/iot/api/getallTempe')
+    fetch('https://tinaco.vercel.app/iot/api/getallTempe')
         .then(response => response.json())
         .then(response => {
             const data = response.data;
@@ -134,7 +134,7 @@ function actualizarTemperatura() {
 }
 
 function actualizarFotoVal() {
-    fetch('http://localhost:3000/iot/api/getlastFotovalT5')
+    fetch('https://tinaco.vercel.app/iot/api/getlastFotovalT5')
         .then(response => response.json())
         .then(response => {
             const data = response.data;

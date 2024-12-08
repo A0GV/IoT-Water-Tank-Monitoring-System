@@ -28,7 +28,7 @@ const router = require('./route')
  * Paso 1: Crear el servidor con Express.
  */
 const app = express();
-const port = constants.serverPort;
+const port = process.env.SERVER_PORT||3000;
 
 console.log('Serving static files from: ', __dirname + '/public');
 app.use(express.static(__dirname + '/public'));
